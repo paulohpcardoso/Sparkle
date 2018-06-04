@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.danijela.sparkle.viewmodel.HabitItemViewModel" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/habit_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:contentPadding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{viewModel::onItemClick}"
+            android:paddingBottom="8dp">
+
+            <com.example.danijela.sparkle.controls.TopRoundedImageView
+                android:id="@+id/habit_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="0dp"
+                android:adjustViewBounds="true"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@{viewModel.item.imageUrl}" />
+
+
+            <RelativeLayout
+                android:id="@+id/divider_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/habit_image"
+                android:background="@color/edge" />
+
+            <include
+                android:id="@+id/progress_view"
+                layout="@layout/progress_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_1"
+                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:id="@+id/divider_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/progress_view"
+                android:background="@color/edge" />
+
+            <TextView
+                android:id="@+id/habit_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider_2"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@{viewModel.item.title}"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/habit_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/habit_title"
+                android:layout_below="@+id/habit_title"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="0dp"
+                android:text="@{viewModel.item.description}"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="@color/text_third"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</layout>

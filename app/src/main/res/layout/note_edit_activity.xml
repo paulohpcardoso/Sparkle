@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.danijela.sparkle.viewmodel.NoteEditViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".view.NoteEditActivity">
+
+        <com.example.danijela.sparkle.controls.TopRoundedImageView
+            android:id="@+id/note_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@{viewModel.item.imageUrl}" />
+
+        <Button
+            android:id="@+id/change_photo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/note_image"
+            android:layout_alignEnd="@+id/note_image"
+            android:layout_margin="8dp"
+            android:background="#77ffffff"
+            android:onClick="@{viewModel::changePhoto}"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Change photo"
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:id="@+id/note_content_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/note_image"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Todays"
+            android:textColor="@color/text_third"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/note_content_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/note_content_label"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="@{viewModel.item.text}"
+            android:inputType="textMultiLine" />
+
+    </RelativeLayout>
+
+</layout>

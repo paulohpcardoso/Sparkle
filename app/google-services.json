@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "622715201858",
+    "project_id": "habits-412fd"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622715201858:android:5b4eaa6ee17fbfde",
+        "android_client_info": {
+          "package_name": "com.example.danijela.sparkle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622715201858-3ngdiajiobj2o7aepcto72mlvuqlmk98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.danijela.sparkle",
+            "certificate_hash": "0B7C7FBFA736513C35D1C017FA26ED04A69690BA"
+          }
+        },
+        {
+          "client_id": "622715201858-fnd318a4hescufguiuhnkl3ofv687kbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBblKraz9v-uiIzRETraSDyJaoQbtHEp78"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

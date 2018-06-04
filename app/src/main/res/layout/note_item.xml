@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.danijela.sparkle.viewmodel.NoteItemViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/note_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/card_background"
+        android:onClick="@{viewModel::onItemClick}"
+        >
+
+        <ImageView
+            android:id="@+id/note_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@{viewModel.item.imageUrl}"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/note_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/note_image"
+            android:text="January 12, 2016"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/note_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/note_date"
+            android:layout_below="@+id/note_date"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+
+            android:text="@{viewModel.item.text}"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+</layout>

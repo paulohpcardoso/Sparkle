@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_magnifying_glass"
+        app:icon="@drawable/ic_action_magnifying_glass"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/add_action"
+        android:icon="@drawable/ic_action_icon_add"
+        android:title="Add habit"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/view_others_action"
+        android:icon="@drawable/ic_action_users"
+        android:title="View friend's habits"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/inbox_action"
+        android:icon="@drawable/ic_action_communication"
+        android:title="Inbox"
+        app:showAsAction="collapseActionView" />
+
+
+</menu>

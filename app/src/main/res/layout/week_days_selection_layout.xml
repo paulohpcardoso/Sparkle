@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ToggleButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOn="MO"
+        android:textOff="MO"
+        android:id="@+id/monday_toggle_button" />
+
+    <ToggleButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOn="TU"
+        android:textOff="TU"
+        android:id="@+id/tuesday_toggle_button" />
+
+    <ToggleButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOn="WE"
+        android:textOff="WE"
+        android:id="@+id/wednesday_toggle_button" />
+
+    <ToggleButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOn="TH"
+        android:textOff="TH"
+        android:id="@+id/thursday_toggle_button" />
+
+    <ToggleButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOn="FR"
+        android:textOff="FR"
+        android:id="@+id/friday_toggle_button" />
+
+    <ToggleButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOn="SA"
+        android:textOff="SA"
+        android:id="@+id/saturday_toggle_button" />
+    <ToggleButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOn="SU"
+        android:textOff="SU"
+        android:id="@+id/sunday_toggle_button" />
+
+
+</LinearLayout>

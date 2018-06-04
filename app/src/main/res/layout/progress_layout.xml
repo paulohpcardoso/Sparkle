@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="isVisible"
+            type="boolean" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="@{isVisible ? View.VISIBLE : View.GONE}">
+
+        <CheckBox
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/checkbox_button_selector"
+            android:button="@null" />
+
+
+        <CheckBox
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/checkbox_button_selector"
+            android:button="@null"
+            android:checked="true" />
+
+        <CheckBox
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/checkbox_button_selector"
+            android:button="@null"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/checkbox_button_selector"
+            android:button="@null"
+            android:checked="true" />
+
+        <CheckBox
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/checkbox_button_selector"
+            android:button="@null"
+            android:checked="true" />
+
+        <CheckBox
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/checkbox_button_selector"
+            android:button="@null"
+            android:checked="true" />
+
+        <CheckBox
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/checkbox_button_selector"
+            android:button="@null"
+            android:checked="true" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#F7F7F7</color>
+    <color name="colorAccent">#43B663</color>
+    <color name="colorAccent2">#C6282D</color>
+    <color name="background">#E9E9E9</color>
+    <color name="background_main">#FFFFFF</color>
+    <color name="edge">#D9D9D9</color>
+    <color name="text_primary">#444444</color>
+    <color name="text_secondary">#525252</color>
+    <color name="text_third">#B0B0B0</color>
+    <color name="green_indicator">#9FC883</color>
+    <color name="text_primary_inverted">#ffffff</color>
+    <color name="text_secondary_inverted">#dddddd</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="success">#43B663</color>
+    <color name="fail">#C6282D</color>
+    <color name="skip">#76E996</color>
+    <color name="grayed_out">#B0B0B0</color>
+</resources>
